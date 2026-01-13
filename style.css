@@ -1,0 +1,423 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove animations for people who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+body {
+  background-color: #000;
+}
+
+.main {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  color: #fff;
+  font-family: Montserrat;
+}
+
+.container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.sidebar {
+  width: 20.5rem;
+  /* border: 2px solid red; */
+}
+
+.navbar {
+  padding: .6em 0.9em;
+  /* border: 2px solid blue; */
+  border-radius: 10px;
+  line-height: 50px;
+  font-size: 1.2rem;
+  background-color: #121212;
+
+  margin: 10px 10px 0 10px;
+
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 1.1rem;
+  margin-left: 1.1rem;
+}
+
+.library {
+  margin: 10px 10px 0 10px;
+  padding: 0 1em 1em;
+  border-radius: 10px;
+  background-color: #121212;
+  height: calc(100vh - 4.5rem);
+}
+
+.option {
+  justify-content: space-between;
+  padding: 1.5em 0;
+}
+
+.lib-option img {
+  width: 20px;
+  margin-right: 20px;
+}
+
+.lib-option a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.icons i:first-child {
+  margin-right: 10px;
+}
+
+
+.box {
+  background-color: #232323;
+  padding: 1em 1em;
+  font-weight: 900;
+  border-radius: 10px;
+  line-height: 30px;
+  font-size: .8rem;
+}
+
+.box button {
+  border-radius: 20px;
+  border: none;
+  padding: 0 1.3em;
+  font-size: .8rem;
+  font-weight: 700;
+}
+
+.box p:nth-child(2) {
+  font-weight: 400;
+  font-size: .8rem;
+  padding-bottom: 10px;
+}
+
+.playlist-box {
+  margin-bottom: 10px;
+}
+
+/* ! Primary Content */
+
+::-webkit-scrollbar {
+  width: 10px; 
+}
+
+::-webkit-scrollbar-track {
+  background: #212121;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+  height: 1rem;
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.primary-content {
+  width: calc(100% - 20.5rem);
+  overflow: auto;
+  margin: 10px 10px 0 0;
+  border-radius: 10px;
+  background-color: #121212;
+}
+
+/* sticky navbar */
+
+.sticky-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 1em;
+  position: sticky;
+  top: 0;
+  background-color: #121212;
+
+}
+
+.sticky-nav-icons {
+  display: flex;
+}
+
+.sticky-nav-options button {
+  /* background-color: #fff; */
+  font-weight: 600;
+  border: none;
+  font-size: .9rem;
+  padding: .3rem 1rem;
+  border-radius: 20px;
+}
+
+.sticky-nav-options button:nth-child(2) {
+  background-color: #000;
+  color: #fff;
+}
+
+.sticky-nav-icons img {
+  width: 30px;
+  height: 30px;
+}
+
+.sticky-nav-options > * {
+  margin-left: 1rem;
+}
+
+/*! cards */
+
+.card-container {
+  padding: 1em .5em;
+}
+
+.cards {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: nowrap;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0; 
+  width: 10rem;
+  gap: 10px;
+  background-color: #1b1b1b;
+  padding: 1em 1em;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+
+.card img {
+  width: 8rem;
+  border-radius: 10px;
+}
+
+.card-title {
+  font-weight: 700;
+}
+
+.card-info {
+  overflow-wrap: break-word; 
+  word-break: break-word; 
+  white-space: normal;
+  font-size: .7rem;
+}
+
+footer {
+  margin: 5rem 0 10rem;
+}
+
+footer hr {
+  background-color: #303030;
+}
+
+
+/*! Music Player */
+.music-player {
+  height: 4.5rem;
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 2em 1em;
+  position: fixed;
+  bottom: 0;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+}
+
+/* Album */
+
+.album {
+  /* padding: 0em .5em; */
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.album-img img {
+  width: 50px;
+  border-radius: 10px;
+}
+
+.song-title {
+  font-size: .8rem;
+}
+
+.artist-name {
+  font-size: .6rem;
+}
+
+.album-add-btn i {
+  border-radius: 50%;
+  font-size: 1rem;
+}
+
+/* Player */
+
+.player {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 45%;
+}
+
+.player-icons {
+  gap: 2em;
+}
+
+.player-icons img{
+  width: 20px;
+  height: 20px;
+}
+
+.player-bar {
+  width: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input{
+  width: 100%;
+  height: 3px;
+  background: #000;
+  accent-color: green;
+}
+
+.player-bar span {
+  font-size: .8rem;
+}
+
+/* Controls */
+
+.controls {
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+}
+
+.volume {
+  gap: 1em;
+  align-items: center;
+}
+
+
+@media (max-width: 770px) {
+  .sidebar {
+    display: none;
+  }
+
+  .primary-content {
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+  }
+
+  .album, .controls {
+    display: none;
+  }
+
+  .player {
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .sticky-nav-options button:first-child {
+    display: none;
+  }
+
+  .sticky-nav-icons img:last-child  {
+    display: none;
+  }
+}

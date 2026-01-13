@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportify Clone with HTML and CSS</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- font awwsome cnd -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- favicon -->
+    <link rel="icon" href="logo.png">
+    <!-- style.css -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="main container d-flex">
+        <!-- Sidebar (1) -->
+        <aside class="sidebar">
+            <!-- Navbar (1.1) -->
+            <nav class="navbar">
+                <!-- (1.1.1) -->
+                <div class="home">
+                    <i class="fa-solid fa-house"></i>
+                    <a href="#">Home</a>
+                </div>
+                <!-- (1.1.2) -->
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a href="#">Search</a>
+                </div>
+            </nav>
+            <!-- Library (1.2) -->
+            <div class="library">
+                <!-- (1.2.1) -->
+                <div class="option d-flex">
+                    <div class="lib-option d-flex">
+                        <img src="library_icon.png" alt="library image">
+                        <a href="#">Your Library</a>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-solid fa-plus"></i>
+                        <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+                <!-- (1.2.2) -->
+                <div class="box playlist-box">
+                    <p>Create your first playlist</p>
+                    <p>it`s easy, we`ll help you</p>
+                    <button>Create Playlist</button>
+                </div>
+                <!-- (1.2.3) -->
+                <div class="box podcast-box">
+                    <p>Let`s find some podcasts to follow</p>
+                    <p>We`ll keep you updated on new episodes</p>
+                    <button>Browse podcasts</button>
+                </div>
+
+            </div>
+        </aside>
+
+        <!-- Primary Content (2) -->
+        <section class="primary-content">
+            <div class="sticky-nav">
+                <div class="sticky-nav-icons">
+                    <img src="backward_icon.png" alt="backward button">
+                    <img src="forward_icon.png" alt="forward button">
+                </div>
+                <div class="sticky-nav-options">
+                    <button>Explore Premium</button>
+                    <button><i class="fa-regular fa-circle-down"></i> Install App</button>
+                    <i class="fa-regular fa-user"></i>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <h2 class="card-container-title">Recently Played</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="card1img.jpeg" alt="">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most of played...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <h2 class="card-container-title">Trending now near you</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="card2img.jpeg" alt="">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most of played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="card3img.jpeg" alt="">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most of played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="card4img.jpeg" alt="">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most of played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="card3img.jpeg" alt="">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most of played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="card4img.jpeg" alt="">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most of played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="card2img.jpeg" alt="">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most of played...</p>
+                    </div>
+                    <div class="card">
+                        <img src="card3img.jpeg" alt="">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most of played...</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card-container">
+                <h2 class="card-container-title">Recently Played</h2>
+                <div class="cards">
+                    <div class="card">
+                        <img src="card5img.jpeg" alt="">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most of played...</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="card6img.jpeg" alt="">
+                        <p class="card-title">Top 50 - Global</p>
+                        <p class="card-info">Your daily updates of the most of played...</p>
+                    </div>
+                </div>
+            </div>
+
+            <footer>
+                <hr>
+            </footer>
+
+        </section>
+
+        <!-- Contorls (3) -->
+        <div class="music-player d-flex">
+            <div class="album d-flex">
+                <div class="album-img">
+                    <img src="card3img.jpeg" alt="album image">
+                </div>
+                <div class="album-info">
+                    <div class="song-title">Mere Paas Tum Ho</div>
+                    <div class="artist-name">Rahat Fateh Ali Khan</div>
+                </div>
+                <div class="album-add-btn">
+                    <i class="fa-solid fa-plus"></i>
+                </div>
+            </div>
+
+            <div class="player d-flex">
+                <div class="player-icons d-flex">
+                    <img src="player_icon1.png" alt="">
+                    <img src="player_icon2.png" alt="">
+                    <img src="player_icon3.png" alt="">
+                    <img src="player_icon4.png" alt="">
+                    <img src="player_icon5.png" alt="">
+                </div>
+                <div class="player-bar">
+                    <span class="current-time">2:23</span>
+                    <input type="range" min="0" max="100">
+                    <span class="total-time">4:03</span>
+                </div>
+            </div>
+
+
+            <div class="controls d-flex">
+                <i class="fa-regular fa-closed-captioning"></i>
+                <i class="fa-regular fa-bookmark"></i>
+                <i class="fa-solid fa-computer"></i>
+                <div class="volume d-flex">
+                    <i class="fa-solid fa-volume-high"></i>
+                    <input type="range" min="0" max="10">
+                </div>
+                <i class="fa-solid fa-expand"></i>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
