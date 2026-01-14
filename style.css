@@ -296,8 +296,7 @@ footer {
 
 .footer-links {
   display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 1.4rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding-block: 2rem;
 }
 
@@ -475,4 +474,5 @@ input{
     width: 5px; 
   }
 }
+
 
