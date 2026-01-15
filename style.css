@@ -306,7 +306,6 @@ footer {
 .footer-links {
   display: grid;
    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-  gap: 1.4rem;
   padding-block: 2rem;
 }
 
@@ -484,3 +483,4 @@ input{
     width: 5px; 
   }
 }
+
