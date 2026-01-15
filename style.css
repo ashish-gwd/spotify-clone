@@ -95,6 +95,14 @@ body {
   display: flex;
 }
 
+.btn {
+  transition: scale ease .3s;
+}
+
+.btn:hover {
+  scale: 1.05;
+}
+
 .sidebar {
   width: 20.5rem;
 }
@@ -105,6 +113,7 @@ body {
   line-height: 50px;
   font-size: 1.2rem;
   background-color: #121212;
+
   margin: 10px 10px 0 10px;
 
 }
@@ -296,7 +305,7 @@ footer {
 
 .footer-links {
   display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+   grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
   gap: 1.4rem;
   padding-block: 2rem;
 }
@@ -355,6 +364,7 @@ footer p {
 /* Album */
 
 .album {
+  /* padding: 0em .5em; */
   justify-content: center;
   align-items: center;
   gap: 20px;
