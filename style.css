@@ -97,17 +97,14 @@ body {
 
 .sidebar {
   width: 20.5rem;
-  /* border: 2px solid red; */
 }
 
 .navbar {
   padding: .6em 0.9em;
-  /* border: 2px solid blue; */
   border-radius: 10px;
   line-height: 50px;
   font-size: 1.2rem;
   background-color: #121212;
-
   margin: 10px 10px 0 10px;
 
 }
@@ -124,7 +121,6 @@ body {
   padding: 0 1em 1em;
   border-radius: 10px;
   background-color: #121212;
-  height: calc(100vh - 4.5rem);
 }
 
 .option {
@@ -145,6 +141,7 @@ body {
 .icons i:first-child {
   margin-right: 10px;
 }
+
 
 .box {
   background-color: #232323;
@@ -171,6 +168,10 @@ body {
 
 .playlist-box {
   margin-bottom: 10px;
+}
+
+.podcast-box {
+  margin-bottom: 5rem;
 }
 
 /* ! Primary Content */
@@ -221,7 +222,6 @@ body {
 }
 
 .sticky-nav-options button {
-  /* background-color: #fff; */
   font-weight: 600;
   border: none;
   font-size: .9rem;
@@ -296,7 +296,8 @@ footer {
 
 .footer-links {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.4rem;
   padding-block: 2rem;
 }
 
@@ -354,7 +355,6 @@ footer p {
 /* Album */
 
 .album {
-  /* padding: 0em .5em; */
   justify-content: center;
   align-items: center;
   gap: 20px;
@@ -474,5 +474,3 @@ input{
     width: 5px; 
   }
 }
-
-
