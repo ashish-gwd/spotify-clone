@@ -1,4 +1,4 @@
 # spotify-clone
 Spotify Clone with HTML and CSS.
 
-live at: https://ashish-gaikwad06.github.io/spotify-clone/
+live at: https://ashish-gwd.github.io/spotify-clone/
